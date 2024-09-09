@@ -3,16 +3,42 @@
 body {
     background-color: black;
     color: white;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
 nav {
     position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(28, 28, 28, 0.755);
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(3, 46, 40);
 }
 
 header {
     background-image: url(../images/headerbackground.jpg);
-    color: white;
+    padding: 5rem 0 0 1.5rem;
+    margin-bottom: 5rem;
 }
 
 .flex {
@@ -22,26 +48,38 @@ header {
 }
 
 h1 {
+    font-size: 3rem;
+    margin: 0;
+
     text-align: center;
     padding: 5rem;
 }
 
 .question-card {
-    background-color: rgba(128, 128, 128, 0.5);
-    margin: 1rem;
+    background-color: rgba(134, 134, 134, 0.096);
+    margin: 0 0 5rem 0;
     height: 15rem;
     width: 30rem;
     text-align: center;
+    border: white solid 3px;
     border-radius: 10px;
+    box-shadow: 15px 15px rgb(3, 46, 40);
 }
 
-.answer {
+.answerbutton {
     margin: 5rem 3rem;
     padding: 1rem 0;
-    color: black;
-    background-color: black;
+    background-color: rgb(3, 46, 40);
+    border-radius: 20px;
+    cursor: help;
 }
 
-.answer:hover {
+.answerbutton .answer {
+    visibility: hidden;
+}
+
+
+.answerbutton:hover .answer{
+    visibility: visible;
     color: white;
 }
